@@ -1,5 +1,6 @@
 variable "github_repo_name" {
   description = "Name of the GitHub repository to create"
+  type        = string
 }
 
 variable "github_repo_visibility" {
