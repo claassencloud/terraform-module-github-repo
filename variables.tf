@@ -1,7 +1,3 @@
-variable "github_token" {
-  description = "GitHub Personal Access Token"
-}
-
 variable "github_repo_name" {
   description = "Name of the GitHub repository to create"
 }
