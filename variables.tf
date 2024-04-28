@@ -7,3 +7,8 @@ variable "github_repo_visibility" {
   type        = string
   default     = "private"
 }
+
+variable "github_owner" {
+  description = "The owner (org or user) of the GitHub repo"
+  type        = string
+}
