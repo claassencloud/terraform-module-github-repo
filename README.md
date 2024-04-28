@@ -1,5 +1,15 @@
 # Terraform Module GitHub Repository
 
+## Known Issues 
+* The github provider doesn't seem to honor its `owner` argument.
+  * If a repo owner other than the user who created the credntials is desired, the `GITHUB_OWNER` environment variable can be set as a workaround.
+
+## Environment Variables
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| GITHUB_OWNER | The owner for the repo being created | String | The user that created the gh credentials | no |
+
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
@@ -30,7 +40,6 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_github_repo_name"></a> [github\_repo\_name](#input\_github\_repo\_name) | Name of the GitHub repository to create | `any` | n/a | yes |
 | <a name="input_github_repo_visibility"></a> [github\_repo\_visibility](#input\_github\_repo\_visibility) | Visibility of the repository ('public' or 'private') | `string` | `"private"` | no |
-| <a name="input_github_token"></a> [github\_token](#input\_github\_token) | GitHub Personal Access Token | `any` | n/a | yes |
 
 ## Outputs
 
