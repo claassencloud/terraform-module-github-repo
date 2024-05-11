@@ -14,7 +14,7 @@ variable "github_owner" {
   type        = string
 }
 
-variable "GITHUB_TOKEN" {
+variable "github_token" {
   description = "The personal access token used to authenticate with the GitHub API"
   type        = string
 }
