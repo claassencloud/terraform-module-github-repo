@@ -14,6 +14,12 @@ variable "github_owner" {
   type        = string
 }
 
+variable "github_repo_vulnerability_alerts" {
+  description = "Whether or not to enable vulnerabilty scanning on the repo"
+  type        = string
+  default     = true
+}
+
 variable "github_token" {
   description = "The personal access token used to authenticate with the GitHub API"
   type        = string
